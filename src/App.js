@@ -46,11 +46,11 @@ const App = () => {
   const onCheckout = () => {
     telegram.MeinButton.txt = "Order Placed"
     telegram.MeinButton.show()
-  }
+  };
   return (
     <div>
       <h1 className='heading'>Order Food</h1>
-      <Cart cartItems={cartItems} onCheckout={onCheckout} onAdd={onAdd} onRemuve={onRemove} />
+      <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className='cards__container'>
         {
           foods ?

@@ -6,13 +6,13 @@ const Card = ({ food, onAdd, onRemuve }) => {
     const [count, setCount] = useState(0)
     const { title, price, Image } = food;
     const handleIncrement = () => {
-        onAdd(food)
         setCount(count + 1)
+        onAdd(food)
     }
 
     const handleDecrement = () => {
-        onRemuve(food)
         setCount(count - 1)
+        onRemuve(food)
     }
     return (<>
         <div className='card'>
