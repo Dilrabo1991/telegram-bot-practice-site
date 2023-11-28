@@ -4,6 +4,7 @@ import './components/Button.css'
 import Card from './components/Card/Card'
 import Cart from './components/Cart/Cart'
 
+
 const { getData } = require('./components/db/db')
 const foods = getData()
 const telegram = window.Telegram.WebApp;
@@ -44,8 +45,8 @@ const App = () => {
   }
 
   const onCheckout = () => {
-    telegram.MeinButton.txt = "Order Placed"
-    telegram.MeinButton.show()
+    telegram.MainButton.text = "Pay :)";
+    telegram.MainButton.show();
   };
   return (
     <div>
